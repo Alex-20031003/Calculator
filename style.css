@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #00ADB5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222831;
+  padding: 20px;
+  border-radius: 20px;
+}
+.container-input {
+  outline: none;
+  border: none;
+  color: #fff;
+  background-color: #222831;
+  width: 100%;
+  padding: 20px;
+  text-align: right;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.container-input::-moz-placeholder {
+  color: #fff;
+}
+.container-input::placeholder {
+  color: #fff;
+}
+.container-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.button {
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #393E46;
+  font-size: 40px;
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button:hover {
+  background-color: #505762;
+}
+.button:active {
+  background-color: #67707e;
+}
+.button-two {
+  grid-column: span 2;
+  width: 180px;
+  border-radius: 50px;
+}
+.button-blue {
+  background-color: #00ADB5;
+}
+.button-blue:hover {
+  background-color: #00c5cf;
+}
+.button-blue:active {
+  background-color: #00dee8;
+}
+.button-grey {
+  background-color: #505762;
+}
+.button-grey:hover {
+  background-color: #67707e;
+}
+.button-grey:active {
+  background-color: #808998;
+}/*# sourceMappingURL=style.css.map */

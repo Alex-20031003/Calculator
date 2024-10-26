@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+            <input type="text" class="container-input" id="input" readonly />
+
+        <div class="container-buttons">
+            <button type="button" onclick="clearDisplay()" id="backScape" class="button button-grey">AC</button>
+            <button type="button" onclick="minusOrPlus()" class="button button-grey">+/-</button>
+            <button type="button" onclick="appendToDisplay('%')" class="button button-grey">%</button>
+            <button type="button" onclick="appendToDisplay('/')" class="button button-blue">÷</button>
+
+            <button type="button" onclick="appendToDisplay('7')" class="button">7</button>
+            <button type="button" onclick="appendToDisplay('8')" class="button">8</button>
+            <button type="button" onclick="appendToDisplay('9')" class="button">9</button>
+            <button type="button" onclick="appendToDisplay('*')" class="button button-blue">X</button>
+
+            <button type="button" onclick="appendToDisplay('4')" class="button">4</button>
+            <button type="button" onclick="appendToDisplay('5')" class="button">5</button>
+            <button type="button" onclick="appendToDisplay('6')"class="button">6</button>
+            <button type="button" onclick="appendToDisplay('-')"class="button button-blue">–</button>
+
+            <button type="button" onclick="appendToDisplay('1')"class="button">1</button>
+            <button type="button" onclick="appendToDisplay('2')"class="button">2</button>
+            <button type="button" onclick="appendToDisplay('3')"class="button">3</button>
+            <button type="button" onclick="appendToDisplay('+')"class="button button-blue">+</button>
+
+            <button type="button" onclick="appendToDisplay('0')"class="button button-two">0</button>
+            <button type="button" onclick="appendToDisplay('.')"class="button">,</button>
+            <button type="button" onclick="calculation()" class="button button-blue">=</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

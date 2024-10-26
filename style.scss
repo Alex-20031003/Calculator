@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+$first-color: #222831;
+$second-color: #393E46;
+$third-color: #00ADB5;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: $third-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $first-color;
+    padding: 20px;
+    border-radius: 20px;
+
+    &-input{
+        outline: none;
+        border: none;
+        color: #fff;
+        background-color: $first-color;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+        font-size: 70px;
+        margin-bottom: 20px;
+
+        &::placeholder{
+            color: #fff;
+        }
+    }
+
+    &-buttons{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+}
+
+.button{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    color: #fff;
+    background-color: $second-color;
+    font-size: 40px;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        background-color: lighten($second-color, 10%);
+    }
+
+    &:active{
+        background-color: lighten($second-color, 20%);
+    }
+
+    &-two{
+        grid-column: span 2;
+        width: 180px;
+        border-radius: 50px;
+    }
+
+    &-blue{
+        background-color: $third-color;
+
+        &:hover{
+            background-color: lighten($third-color, 5%);
+        }
+    
+        &:active{
+            background-color: lighten($third-color, 10%);
+        }
+    }
+
+    &-grey{
+        background-color: lighten($second-color, 10%);
+
+        &:hover{
+            background-color: lighten($second-color, 20%);
+        }
+    
+        &:active{
+            background-color: lighten($second-color, 30%);
+        }
+    }
+}
